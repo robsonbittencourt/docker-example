@@ -16,7 +16,7 @@ public class ApiController {
         var appNameFromEnv = System.getenv("APP_NAME");
         logger.info("Request received on " + appNameFromEnv + " app");
 
-        return appNameFromEnv != null ? appNameFromEnv : "default-app-name";
+        return "The App name is: " + (appNameFromEnv != null ? appNameFromEnv : "default-app-name");
     }
 
 }
